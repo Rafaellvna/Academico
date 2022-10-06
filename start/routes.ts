@@ -26,7 +26,7 @@ Route.get('/', async () => {
 
 Route.resource('/cursos', 'CursosController').apiOnly()
 Route.resource('/disciplinas', 'DisciplinasController').apiOnly()
-Route.get('/cursos/:id', 'CursosController.orion')
+Route.resource('/alunos', 'AlunosController').apiOnly()
 
 /*Route.get('/cursos', 'CursosController.index')
 Route.post('/cursos', 'CursosController.store')
